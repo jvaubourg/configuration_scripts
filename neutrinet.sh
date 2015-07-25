@@ -22,27 +22,27 @@ get_variables() {
     else
         echo
         echo "Main domain name (will be used to host your email and services)"
-        echo "i.e.: example.com"
+        echo "e.g.: example.com"
         read domain
         echo
         echo "Additional domain name (for example if you want to have a different email domain than the previous one)"
-        echo "i.e.: example2.com (or leave blank)"
+        echo "e.g.: example2.com (or leave blank)"
         read additional_domain
         echo
         echo "Username (used to connect to the user interface and access your apps, must be composed of lowercase letters and numbers only)"
-        echo "i.e.: jonsnow"
+        echo "e.g.: jonsnow"
         read username
         echo
         echo "Firstname (mandatory, used as your firstname when you send emails)"
-        echo "i.e.: Jon"
+        echo "e.g.: Jon"
         read firstname
         echo
         echo "Lastname (mandatory, used as your lastname when you send emails)"
-        echo "i.e. Snow"
+        echo "e.g. Snow"
         read lastname
         echo
         echo "Email (must contain one of the domain previously entered as second part)"
-        echo "i.e. jon@example.com"
+        echo "e.g. jon@example.com"
         read email
         echo
         echo "VPN client certificate (paste all the lines below and end with a blank line): "
@@ -61,11 +61,11 @@ get_variables() {
         read vpn_pwd
         echo
         echo "IPv6 delegated prefix (without trailing /56, to be found in the neutrinet MGMT interface)"
-        echo "i.e.: 2001:913:1000:300::"
+        echo "e.g.: 2001:913:1000:300::"
         read ip6_net
         echo
         echo "WiFi AP SSID (that will appear right after this configuration script ending)"
-        echo "i.e.: MyWunderbarNeutralNetwork"
+        echo "e.g.: MyWunderbarNeutralNetwork"
         read wifi_ssid
         echo
         echo "Install DKIM? (recommended if you want a perfect email server, not needed otherwise)"
