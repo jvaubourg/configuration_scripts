@@ -195,6 +195,7 @@ EOF
     yunohost app setting vpnclient login_passphrase -v "$vpn_pwd"
     
     yunohost app setting vpnclient ip6_net -v "$ip6_net"
+    yunohost app setting vpnclient ip6_addr -v "${ip6_net}42"
 
     # Add the service to YunoHost's monitored services
     yunohost service add ynh-vpnclient -l /var/log/openvpn-client.log
